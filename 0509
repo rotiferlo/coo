@@ -1,1 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>喵言喵語 | ネコの言葉</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-animation">
+        <div class="circle circle-1"></div>
+        <div class="circle circle-2"></div>
+        <div class="circle circle-3"></div>
+        <div class="circle circle-4"></div>
+    </div>
+    
+    <div class="page-container">
+        <header class="header">
+            <div class="title-container">
+                <h1 class="title">
+                    ネコの言葉
+                    <span class="cat-silhouette">
+                        <svg viewBox="0 0 100 100" width="40" height="40">
+                            <path d="M50,5 C30,5 15,20 15,40 C15,60 30,75 50,75 C70,75 85,60 85,40 C85,20 70,5 50,5 Z M35,35 C38,35 40,37 40,40 C40,43 38,45 35,45 C32,45 30,43 30,40 C30,37 32,35 35,35 Z M65,35 C68,35 70,37 70,40 C70,43 68,45 65,45 C62,45 60,43 60,40 C60,37 62,35 65,35 Z M50,55 C45,55 40,53 40,50 C40,47 45,45 50,45 C55,45 60,47 60,50 C60,53 55,55 50,55 Z" fill="currentColor"/>
+                        </svg>
+                    </span>
+                    <br>
+                    <span class="subtitle">喵言喵語
+                        <span class="cat-silhouette">
+                            <svg viewBox="0 0 100 100" width="30" height="30">
+                                <path d="M50,5 C30,5 15,20 15,40 C15,60 30,75 50,75 C70,75 85,60 85,40 C85,20 70,5 50,5 Z M35,35 C38,35 40,37 40,40 C40,43 38,45 35,45 C32,45 30,43 30,40 C30,37 32,35 35,35 Z M65,35 C68,35 70,37 70,40 C70,43 68,45 65,45 C62,45 60,43 60,40 C60,37 62,35 65,35 Z M50,55 C45,55 40,53 40,50 C40,47 45,45 50,45 C55,45 60,47 60,50 C60,53 55,55 50,55 Z" fill="currentColor"/>
+                            </svg>
+                        </span>
+                    </span>
+                </h1>
+                <p class="description">毛孩心情‧即時翻譯</p>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="result-grid">
+                <div class="result-card paper-effect recognition">
+                    <h2 class="card-title">
+                        <span class="ja">音声認識</span>
+                        <span class="zh">收到的喵音</span>
+                    </h2>
+                    <div class="record-controls">
+                        <button id="startVoice" class="btn record-btn circle-btn">
+                            <span class="record-icon"></span>
+                        </button>
+                    </div>
+                    <div id="recognitionResult" class="result-content"></div>
+                </div>
+
+                <div class="result-card paper-effect translation">
+                    <h2 class="card-title">
+                        <span class="ja">にゃんにゃん翻訳</span>
+                        <span class="zh">喵星人的心聲</span>
+                    </h2>
+                    <div id="geminiResponse" class="result-content"></div>
+                    <button id="askGemini" class="btn translate-btn">
+                        <span class="btn-text">開始翻譯</span>
+                        <span class="btn-text-jp">翻訳開始</span>
+                    </button>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p class="copyright">© 2025 喵言喵語</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
 
